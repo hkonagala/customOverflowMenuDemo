@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CustomOverflowMenuDemo.iml" filepath="$PROJECT_DIR$/CustomOverflowMenuDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customOverflowMenuDemo.iml" filepath="$PROJECT_DIR$/customOverflowMenuDemo.iml" />
     </modules>
   </component>
 </project>

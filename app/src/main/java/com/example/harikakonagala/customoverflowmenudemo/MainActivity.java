@@ -1,14 +1,15 @@
 package com.example.harikakonagala.customoverflowmenudemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton left, right, bookmark;
     @Override
@@ -41,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        left.setOnClickListener(this);
+        right.setOnClickListener(this);
+        bookmark.setOnClickListener(this);
+
         return super.onPrepareOptionsMenu(menu);
     }
 
@@ -58,5 +63,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateOverFlowMenu() {
         //set onclick listeners for buttons
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.image_button_back:
+                Toast.makeText(getApplicationContext(), "Go Back", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.image_button_forward:
+                Toast.makeText(getApplicationContext(), "Go Forward", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.image_button_bookmark:
+                Toast.makeText(getApplicationContext(), "Bookmark Option", Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 }

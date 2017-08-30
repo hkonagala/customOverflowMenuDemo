@@ -5,7 +5,7 @@
     <item
         android:id="@+id/action_overflow_menu"
         android:title="overflow menu"
-        app:showAsAction="never"
-        android:actionLayout="@layout/activity_custom_menu">
+        app:showAsAction="ifRoom"
+        app:actionLayout="@layout/activity_custom_menu">
     </item>
 </menu>
