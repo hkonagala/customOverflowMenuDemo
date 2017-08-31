@@ -48,7 +48,6 @@ public class MenuDialogFragment extends DialogFragment implements View.OnClickLi
         window.setGravity(Gravity.END | Gravity.TOP);
         WindowManager.LayoutParams p = getDialog().getWindow().getAttributes();
         p.width = 70;
-        p.x = 10;
         p.y = 100;
         window.setAttributes(p);
         window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
